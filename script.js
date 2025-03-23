@@ -9,24 +9,34 @@ mobileMenu.addEventListener('click', () => {
 const toggle = document.getElementById("dark-toggle");
 const body = document.body;
 
-// Check: war Dark Mode gespeichert?
-if (localStorage.getItem("darkMode") === "enabled") {
+// Funktion: Modus wechseln + speichern + Button-Icon
+function enableDarkMode() {
   body.classList.add("dark-mode");
   toggle.textContent = "☀️";
-} else {
-  toggle.textContent = "🌙";
+  toggle.classList.add("rotate");
+  localStorage.setItem("darkMode", "enabled");
 }
 
-// Umschalten bei Klick
-toggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+function disableDarkMode() {
+  body.classList.remove("dark-mode");
+  toggle.textContent = "🌙";
+  toggle.classList.remove("rotate");
+  localStorage.setItem("darkMode", "disabled");
+}
 
-  // Aktuellen Status speichern
+// Check: Dark Mode gespeichert?
+if (localStorage.getItem("darkMode") === "enabled") {
+  enableDarkMode();
+} else {
+  disableDarkMode();
+}
+
+// Toggle bei Klick
+toggle.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("darkMode", "enabled");
-    toggle.textContent = "☀️";
+    disableDarkMode();
   } else {
-    localStorage.setItem("darkMode", "disabled");
-    toggle.textContent = "🌙";
+    enableDarkMode();
   }
 });
+
