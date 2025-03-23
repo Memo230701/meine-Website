@@ -1,4 +1,4 @@
-// Burger Menü Toggle
+// Burger Menü Toggle Handy
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.getElementById('nav-menu');
 
