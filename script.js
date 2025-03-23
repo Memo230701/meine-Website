@@ -1,9 +1,6 @@
-// Einfacher Konsolen-Check
-console.log("Website von Mehmet ist geladen.");
+console.log("Website von Mehmet wurde geladen.");
 
-// (Optional) Interaktive Aktion beim Button
+// Optional: Interaktion mit dem Button
 document.querySelector('.btn').addEventListener('click', () => {
-  alert('Mehr Infos folgen bald – Mehmet arbeitet dran! 🚀');
+  alert('Scroll nach unten, um mehr über mich zu erfahren 🚀');
 });
-
-
