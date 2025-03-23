@@ -72,7 +72,7 @@ body {
 .about {
   background-color: #ffffff;
   color: #333;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -111,7 +111,7 @@ body {
 
 .contact-section {
   background-color: #eaf0ff;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -128,12 +128,12 @@ body {
 
 .contact-box h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .contact-box p {
   font-size: 1.1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3rem;
   line-height: 1.6;
 }
 
@@ -276,7 +276,7 @@ body {
 /* Kontakt-Sektion */
 .contact-section {
   background-color: #eaf0ff;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -293,12 +293,12 @@ body {
 
 .contact-box h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .contact-box p {
   font-size: 1.1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3rem;
   line-height: 1.6;
 }
 
@@ -321,14 +321,14 @@ body {
 
 .lern-section {
   background-color: #ffffff;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   color: #1e3c72;
 }
 
 .lern-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .lern-liste {
@@ -410,13 +410,13 @@ body.dark-mode a {
 .zitat-section {
   background-color: #f0f4ff;
   color: #1e3c72;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
 .zitat-section h2 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 blockquote {
@@ -449,7 +449,7 @@ body.dark-mode #zitat-autor {
   background-color: #f0f4ff;
   border-left: 5px solid #1e3c72;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   border-radius: 10px;
   font-size: 1.05rem;
   line-height: 1.6;
@@ -457,20 +457,20 @@ body.dark-mode #zitat-autor {
 
 .projekt-section {
   background-color: #ffffff;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   color: #1e3c72;
 }
 
 .projekt-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .projekt-card {
   background-color: #f0f4ff;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -522,6 +522,11 @@ body.dark-mode .projekt-links a {
 
 body.dark-mode .projekt-links a:hover {
   background-color: #dbe9ff;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 
