@@ -455,3 +455,73 @@ body.dark-mode #zitat-autor {
   line-height: 1.6;
 }
 
+.projekt-section {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.projekt-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.projekt-card {
+  background-color: #f0f4ff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projekt-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.projekt-card p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.projekt-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #1e3c72;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.projekt-links a:hover {
+  background-color: #2a5298;
+}
+
+/* Dark Mode */
+body.dark-mode .projekt-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .projekt-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .projekt-links a {
+  background-color: #ffffff;
+  color: #1e3c72;
+}
+
+body.dark-mode .projekt-links a:hover {
+  background-color: #dbe9ff;
+}
+
+
