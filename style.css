@@ -109,34 +109,51 @@ body {
   }
 }
 
-.contact {
-  background-color: #f4f4f4;
-  color: #1e3c72;
+.contact-section {
+  background-color: #eaf0ff;
   padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
   text-align: center;
+  color: #1e3c72;
 }
 
-.contact h2 {
+.contact-box h2 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact p {
-  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.contact a {
+.contact-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-box a {
   color: #1e3c72;
   font-weight: bold;
   text-decoration: none;
 }
 
-.contact a:hover {
+.contact-box a:hover {
   text-decoration: underline;
 }
+
+.thanks-text {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #2a5298;
+}
+
 
 html {
   scroll-behavior: smooth;
