@@ -171,33 +171,41 @@ html {
   text-decoration: underline;
 }
 
-/* Burger-Icon (Mobile) */
-.nav-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Responsive Styles */
+/* Mobile Menü Styling */
 @media (max-width: 768px) {
   .nav-menu {
-    display: none;
     flex-direction: column;
     background-color: #1e3c72;
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
   }
 
   .nav-menu.active {
-    display: flex;
+    max-height: 300px; /* oder mehr, je nachdem wie viele Links du hast */
+    padding: 1rem 0;
   }
 
   .nav-toggle {
     display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    z-index: 1100;
+  }
+
+  .nav-container {
+    position: relative;
+    padding-right: 1rem;
   }
 }
+
 
