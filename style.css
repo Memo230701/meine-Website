@@ -100,3 +100,30 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer a {
+  color: #dbe9ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  color: #ffffff99;
+}
