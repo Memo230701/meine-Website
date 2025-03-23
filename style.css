@@ -186,7 +186,17 @@ html {
   color: #ffffff99;
 }
 
-/* Navbar Allgemein */
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+/* Navigation (gekürzt für Fokus) */
 .navbar {
   background-color: #1e3c72;
   color: white;
@@ -215,7 +225,6 @@ html {
   text-decoration: none;
 }
 
-/* Menü auf Desktop */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -228,25 +237,20 @@ html {
   font-weight: 500;
 }
 
-.nav-menu li a:hover {
-  text-decoration: underline;
-}
-
-/* Burger-Icon */
 .nav-toggle {
   display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  background: none;
-  border: none;
-  z-index: 1100;
 }
 
-/* Mobile Version */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    z-index: 1100;
   }
 
   .nav-menu {
@@ -267,4 +271,50 @@ html {
     max-height: 300px;
     padding: 1rem 0;
   }
+}
+
+/* Kontakt-Sektion */
+.contact-section {
+  background-color: #eaf0ff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.contact-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-box a {
+  color: #1e3c72;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.thanks-text {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #2a5298;
 }
