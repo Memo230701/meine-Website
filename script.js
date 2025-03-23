@@ -73,4 +73,3 @@ function zeigeZufallsZitat() {
 // Beim Laden ausführen
 zeigeZufallsZitat();
 
-
