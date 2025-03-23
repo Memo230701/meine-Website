@@ -232,10 +232,35 @@ body {
 }
 
 .nav-menu li a {
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: transparent;
+  transition: background-color 0.3s ease;
 }
+
+.nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Light Mode spezifisch (falls nötig) */
+body:not(.dark-mode) .nav-menu li a {
+  color: white;
+}
+
+/* Dark Mode fix */
+body.dark-mode .nav-menu li a {
+  color: white;
+  background: transparent;
+}
+
+body.dark-mode .nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 
 .nav-toggle {
   display: none;
