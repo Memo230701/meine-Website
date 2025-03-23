@@ -407,6 +407,41 @@ body.dark-mode a {
 .dark-toggle.rotate {
   transform: rotate(180deg);
 }
+.zitat-section {
+  background-color: #f0f4ff;
+  color: #1e3c72;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.zitat-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#zitat-autor {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #2a5298;
+}
+
+/* Dark Mode Support */
+body.dark-mode .zitat-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode #zitat-autor {
+  color: #90caf9;
+}
 
 
 
