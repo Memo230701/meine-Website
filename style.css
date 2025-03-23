@@ -529,4 +529,17 @@ body.dark-mode .projekt-links a:hover {
   gap: 1rem;
 }
 
+/* Menü-Links im Dark Mode fixen */
+body.dark-mode .nav-menu li a {
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+body.dark-mode .nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
