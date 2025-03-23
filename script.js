@@ -73,20 +73,4 @@ function zeigeZufallsZitat() {
 // Beim Laden ausführen
 zeigeZufallsZitat();
 
-// Scroll-to-Top Button anzeigen/verstecken
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-});
-
-// Smooth scroll nach oben
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
 
