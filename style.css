@@ -568,3 +568,30 @@ body.dark-mode .nav-menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-top-btn:hover {
+  background-color: #2a5298;
+}
+
+/* Dark Mode Style */
+body.dark-mode .scroll-top-btn {
+  background-color: white;
+  color: #1e3c72;
+}
