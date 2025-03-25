@@ -109,6 +109,47 @@ body {
   }
 }
 
+/* Über mich Section */
+.lebenslauf {
+  background-color: #ffffff;
+  color: #333;
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.lebenslauf h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.lebenslauf p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive für Mobilgeräte */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .lebenslauf h2 {
+    font-size: 2rem;
+  }
+
+  .lebenslauf p {
+    font-size: 1rem;
+  }
+}
+
 .contact-section {
   background-color: #eaf0ff;
   padding: 3rem 1.5rem;
