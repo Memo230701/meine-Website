@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Lebenslauf – Mehmet Yenilmez</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lebenslauf-section {
+      background-color: #ffffff;
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .lebenslauf-section h2 {
+      color: #1e3c72;
+      margin-bottom: 1rem;
+    }
+    .lebenslauf-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .lebenslauf-section li::before {
+      content: "📌 ";
+    }
+    .lebenslauf-section li {
+      margin-bottom: 0.75rem;
+      font-size: 1.05rem;
+    }
+    .download-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #1e3c72;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .download-link:hover {
+      background-color: #2a5298;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Mehmet Hasan Yenilmez</a>
+      <div class="nav-right">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html#about">Über mich</a></li>
+          <li><a href="index.html#lernen">Lernen</a></li>
+          <li><a href="index.html#projekte">Projekte</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="lebenslauf.html">Lebenslauf</a></li>
+        </ul>
+        <button class="dark-toggle" id="dark-toggle" aria-label="Dark Mode Toggle">🌙</button>
+        <div class="nav-toggle" id="mobile-menu">&#9776;</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inhalt -->
+  <main class="about">
+    <h1 style="text-align:center; color:#1e3c72;">Lebenslauf</h1>
+
+    <section class="lebenslauf-section">
+      <h2>📘 Ausbildung</h2>
+      <ul>
+        <li>2007 – 2011: Rather Kreuzweg Grundschule</li>
+        <li>2011 – 2017: Fachoberschulreife, Heinrich-Heine Gesamtschule</li>
+        <li>2017 – 2019: Fachhochschulreife (Wirtschaft und Verwaltung), Adam-Josef Cüppers Berufskolleg</li>
+        <li>2019 – 2021: Ausbildung als Maschinen- und Anlagenführer, August Schmitz Stanz- und Umformtechnik</li>
+        <li>Seit 2023: Bachelorstudium Elektro- und Informationstechnik, Hochschule Düsseldorf</li>
+      </ul>
+    </section>
+
+    <section class="lebenslauf-section">
+      <h2>💼 Berufserfahrung</h2>
+      <ul>
+        <li>2021 – 2023: Anlagentechniker (Automatisierungstechnik), Edeka Zentrallager</li>
+        <li>2023 – 2024: Transport von Rollbehältern, Edeka Zentrallager</li>
+        <li>2024 – 2025: Call-Center Agent, Amevida SE</li>
+      </ul>
+    </section>
+
+    <section class="lebenslauf-section">
+      <h2>🧠 Fähigkeiten & Kenntnisse</h2>
+      <ul>
+        <li>Sprachen: Spanisch, Englisch, Türkisch</li>
+        <li>PC-Kenntnisse: Microsoft Office (Word, Excel)</li>
+        <li>10-Finger-Schreiben</li>
+        <li>Matlab-, Java- & C-Programmierung</li>
+      </ul>
+    </section>
+
+    <section class="lebenslauf-section" style="text-align:center;">
+      <h2>📄 PDF-Version</h2>
+      <a class="download-link" href="Mehmet_Yenilmez_Lebenslauf.pdf" download>Lebenslauf als PDF herunterladen</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
