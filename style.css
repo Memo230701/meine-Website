@@ -1,0 +1,584 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+/* Allgemein */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profilbild {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: white;
+  color: #1e3c72;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #dbe9ff;
+}
+
+/* Über mich Section */
+.about {
+  background-color: #ffffff;
+  color: #333;
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive für Mobilgeräte */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+.contact-section {
+  background-color: #eaf0ff;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.contact-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contact-box a {
+  color: #1e3c72;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.thanks-text {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #2a5298;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer a {
+  color: #dbe9ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  color: #ffffff99;
+}
+
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+/* Navigation (gekürzt für Fokus) */
+.navbar {
+  background-color: #1e3c72;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Light Mode spezifisch (falls nötig) */
+body:not(.dark-mode) .nav-menu li a {
+  color: white;
+}
+
+/* Dark Mode fix */
+body.dark-mode .nav-menu li a {
+  color: white;
+  background: transparent;
+}
+
+body.dark-mode .nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    z-index: 1100;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    background-color: #1e3c72;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+}
+
+/* Kontakt-Sektion */
+.contact-section {
+  background-color: #eaf0ff;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.contact-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contact-box a {
+  color: #1e3c72;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.thanks-text {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #2a5298;
+}
+
+.lern-section {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.lern-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.lern-liste {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Toggle-Button */
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  margin-left: 1rem;
+}
+
+/* Dark Mode aktivieren */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  color: white;
+}
+
+body.dark-mode .about,
+body.dark-mode .lern-section,
+body.dark-mode .contact-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .contact-box,
+body.dark-mode .footer {
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav-menu,
+body.dark-mode .navbar {
+  background-color: #0f2027;
+}
+
+body.dark-mode .btn,
+body.dark-mode .contact-links a,
+body.dark-mode .nav-menu li a {
+  background-color: white;
+  color: #1e3c72;
+}
+
+body.dark-mode .lern-liste li {
+  background-color: #2a2a2a;
+  border-left: 5px solid #555;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  margin-left: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.dark-toggle.rotate {
+  transform: rotate(180deg);
+}
+.zitat-section {
+  background-color: #f0f4ff;
+  color: #1e3c72;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.zitat-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#zitat-autor {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #2a5298;
+}
+
+/* Dark Mode Support */
+body.dark-mode .zitat-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode #zitat-autor {
+  color: #90caf9;
+}
+
+
+
+.lern-liste li {
+  background-color: #f0f4ff;
+  border-left: 5px solid #1e3c72;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.projekt-section {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.projekt-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.projekt-card {
+  background-color: #f0f4ff;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projekt-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.projekt-card p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.projekt-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #1e3c72;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.projekt-links a:hover {
+  background-color: #2a5298;
+}
+
+/* Dark Mode */
+body.dark-mode .projekt-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .projekt-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .projekt-links a {
+  background-color: #ffffff;
+  color: #1e3c72;
+}
+
+body.dark-mode .projekt-links a:hover {
+  background-color: #dbe9ff;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Menü-Links im Dark Mode fixen */
+body.dark-mode .nav-menu li a {
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+body.dark-mode .nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  color: #000000;
+}
+
+body.dark-mode {
+  color: #ffffff;
+}
+
+body.dark-mode .about,
+body.dark-mode .projekt-card,
+body.dark-mode .lern-section,
+body.dark-mode .lebenslauf-section {
+  color: #ffffff;
+}
