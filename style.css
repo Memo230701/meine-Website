@@ -109,7 +109,6 @@ body {
   }
 }
 
-/* Über mich Section */
 .lebenslauf {
   background-color: #ffffff;
   color: #333;
@@ -133,11 +132,11 @@ body {
 
 /* Responsive für Mobilgeräte */
 @media (max-width: 600px) {
-  .hero h1 {
+  .lebenslauf h1 {
     font-size: 2rem;
   }
 
-  .hero p {
+  .lebenslauf p {
     font-size: 1rem;
   }
 
