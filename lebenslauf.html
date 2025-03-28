@@ -6,80 +6,118 @@
   <title>Lebenslauf – Mehmet Yenilmez</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .lebenslauf-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-top: 1.5rem;
-    }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-    body:not(.dark-mode) .lebenslauf-title {
-      color: #000000;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  color: #000000;
+}
 
-    body.dark-mode .lebenslauf-title {
-      color: #ffffff;
-    }
+/* Hero Section */
+.hero {
+  min-height: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
-    .download-link {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #1e3c72;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+.profilbild {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
 
-    .download-link:hover {
-      background-color: #2a5298;
-    }
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-    @media (max-width: 600px) {
-      .lebenslauf-title {
-        font-size: 2rem;
-        margin-top: 1.5rem;
-      }
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
 
-      .lebenslauf-section {
-        padding: 2rem 1rem;
-        margin-bottom: 1.5rem;
-      }
+.btn {
+  background-color: white;
+  color: #1e3c72;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-      .lebenslauf-section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
+.btn:hover {
+  background-color: #dbe9ff;
+}
 
-      .lebenslauf-section li {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1.5rem;
-      }
+/* Lebenslauf-Listen Style (auch im Light Mode) */
+.lebenslauf-section {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-      .download-link {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-        min-height: 44px;
-      }
-    }
+.lebenslauf-section h2 {
+  background-color: #f0f4ff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border-left: 5px solid #1e3c72;
+}
 
-    body.dark-mode .lebenslauf-section {
-      background-color: #2a2a2a;
-      border-radius: 12px;
-      padding: 2rem 1.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      margin-bottom: 1.5rem;
-    }
+.lebenslauf-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    body.dark-mode .lebenslauf-section ul li {
-      background-color: #1e1e1e;
-      border-left: 4px solid #90caf9;
-      padding: 0.8rem;
-      margin-bottom: 1.5rem;
-      border-radius: 6px;
-    }
+.lebenslauf-section li {
+  background-color: #f0f4ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #1e3c72;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Dark Mode */
+body.dark-mode .lebenslauf-section h2 {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-left: 5px solid #555;
+}
+
+body.dark-mode .lebenslauf-section li {
+  background-color: #2a2a2a;
+  border-left: 5px solid #555;
+}
+
   </style>
 </head>
 <body>
