@@ -383,6 +383,11 @@ body.dark-mode .lebenslauf-section {
   color: #e0e0e0;
 }
 
+body.dark-mode .lebenslauf-section ul {
+  list-style: none;
+  padding: 0;
+}
+
 body.dark-mode .lebenslauf-section li {
   background-color: #2a2a2a;
   padding: 1rem;
