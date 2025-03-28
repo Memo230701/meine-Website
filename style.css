@@ -19,25 +19,26 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh; /* Ersetzt ggf. height */
+  padding-top: 8rem; /* mehr Abstand nach oben */
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* statt center */
   align-items: center;
   text-align: center;
   padding: 2rem;
 }
 
 .profilbild {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
