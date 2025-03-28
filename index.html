@@ -5,27 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mehmet lernt Webentwicklung</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body.dark-mode .about,
+    body.dark-mode .projekt-section,
+    body.dark-mode .contact-section,
+    body.dark-mode .zitat-section,
+    body.dark-mode .lern-section {
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+    }
+
+    body.dark-mode .about p,
+    body.dark-mode .projekt-section p,
+    body.dark-mode .contact-section p,
+    body.dark-mode .lern-section li,
+    body.dark-mode .projekt-card p {
+      background-color: #1e1e1e;
+      border-left: 4px solid #90caf9;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  
-<!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar">
-  <div class="nav-container">
-    <a href="#" class="nav-logo">Mehmet Hasan Yenilmez</a>
-    <div class="nav-right">
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#lernen">Lernen</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="lebenslauf.html">Lebenslauf</a></li>
-      </ul>
-      <button class="dark-toggle" id="dark-toggle" aria-label="Dark Mode Toggle">🌙</button>
-      <div class="nav-toggle" id="mobile-menu">&#9776;</div>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Mehmet Hasan Yenilmez</a>
+      <div class="nav-right">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" onclick="closeMobileMenu()">Über mich</a></li>
+          <li><a href="#lernen" onclick="closeMobileMenu()">Lernen</a></li>
+          <li><a href="#projekte" onclick="closeMobileMenu()">Projekte</a></li>
+          <li><a href="#kontakt" onclick="closeMobileMenu()">Kontakt</a></li>
+          <li><a href="lebenslauf.html" onclick="closeMobileMenu()">Lebenslauf</a></li>
+        </ul>
+        <button class="dark-toggle" id="dark-toggle" aria-label="Dark Mode Toggle">🌙</button>
+        <div class="nav-toggle" id="mobile-menu">&#9776;</div>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -35,7 +58,7 @@
       Ich studiere Elektrotechnik in Düsseldorf und lerne gerade Webentwicklung – diese Seite ist Teil meines Lernwegs.
     </p>
     <a href="#about" class="btn">Mehr über mich</a>
-   <h4> <a href="lebenslauf.html" class="btn">Mein Lebenslauf</a> </h4>
+    <a href="lebenslauf.html" class="btn">Mein Lebenslauf</a>
   </section>
 
   <!-- Über mich Section -->
@@ -52,64 +75,70 @@
     </p>
 
     <section class="zitat-section">
-  <h2>Zitat des Tages</h2>
-  <blockquote id="zitat-text">Lade Zitat...</blockquote>
-  <p id="zitat-autor"></p>
-</section>
+      <h2>Zitat des Tages</h2>
+      <blockquote id="zitat-text">Lade Zitat...</blockquote>
+      <p id="zitat-autor"></p>
+    </section>
 
     <section id="lernen" class="lern-section">
-  <h2>Was ich gerade lerne</h2>
-  <ul class="lern-liste">
-    <li>
-      ✅ <strong>HTML</strong> – Ich kann strukturierte Websites mit modernen Standards aufbauen.
-    </li>
-    <li>
-      ✅ <strong>CSS</strong> – Ich gestalte Webseiten responsiv und optisch ansprechend.
-    </li>
-    <li>
-      🔄 <strong>JavaScript</strong> – Ich arbeite gerade aktiv daran, mehr Logik und Interaktion zu verstehen.
-    </li>
-    <li>
-      🧠 <strong>Git & GitHub</strong> – Ich habe gelernt, wie ich meine Seiten online veröffentlichen kann.
-    </li>
-    <li>
-      🚀 <strong>Als Nächstes:</strong> Ich möchte tiefer in moderne Webtechnologien wie <em>React</em> eintauchen, um interaktive Webanwendungen zu bauen.
-    </li>
-  </ul>
-</section>
-    
+      <h2>Was ich gerade lerne</h2>
+      <ul class="lern-liste">
+        <li>
+          ✅ <strong>HTML</strong> – Ich kann strukturierte Websites mit modernen Standards aufbauen.
+        </li>
+        <li>
+          ✅ <strong>CSS</strong> – Ich gestalte Webseiten responsiv und optisch ansprechend.
+        </li>
+        <li>
+          🔄 <strong>JavaScript</strong> – Ich arbeite gerade aktiv daran, mehr Logik und Interaktion zu verstehen.
+        </li>
+        <li>
+          🧠 <strong>Git & GitHub</strong> – Ich habe gelernt, wie ich meine Seiten online veröffentlichen kann.
+        </li>
+        <li>
+          🚀 <strong>Als Nächstes:</strong> Ich möchte tiefer in moderne Webtechnologien wie <em>React</em> eintauchen, um interaktive Webanwendungen zu bauen.
+        </li>
+      </ul>
+    </section>
+
     <section id="projekte" class="projekt-section">
-  <h2>Meine Projekte</h2>
-  <div class="projekt-card">
-    <h3>🌐 Persönliche Portfolio-Website</h3>
-    <p>Mein erstes eigenes Webprojekt: Eine persönliche Website mit HTML, CSS & JavaScript – inkl. Dark Mode, Zufallszitat und responsivem Design.</p>
-    <p><strong>Technologien:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
-    <div class="projekt-links">
-      <a href="https://github.com/Memo230701/meine-Website" target="_blank">🔗 Code auf GitHub</a>
-    </div>
-  </div>
-</section>
+      <h2>Meine Projekte</h2>
+      <div class="projekt-card">
+        <h3>🌐 Persönliche Portfolio-Website</h3>
+        <p>Mein erstes eigenes Webprojekt: Eine persönliche Website mit HTML, CSS & JavaScript – inkl. Dark Mode, Zufallszitat und responsivem Design.</p>
+        <p><strong>Technologien:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
+        <div class="projekt-links">
+          <a href="https://github.com/Memo230701/meine-Website" target="_blank">🔗 Code auf GitHub</a>
+        </div>
+      </div>
+    </section>
 
     <section id="kontakt" class="contact-section">
-    <div class="contact-box">
-      <h2>Kontakt</h2>
-      <p>Du möchtest dich mit mir austauschen, Fragen stellen oder einfach mal Hallo sagen?</p>
-      <p>
-        Dann schreib mir gerne jederzeit über
-        <a href="https://www.instagram.com/mehmet.ynlmz_/" target="_blank">Instagram</a>
-        oder
-        <a href="https://www.linkedin.com/in/mehmet-hasan-yenilmez/" target="_blank">LinkedIn</a>.
-      </p>
-      <p class="thanks-text">Ich freue mich auf deine Nachricht! 🙌</p>
-    </div>
-</section>
+      <div class="contact-box">
+        <h2>Kontakt</h2>
+        <p>Du möchtest dich mit mir austauschen, Fragen stellen oder einfach mal Hallo sagen?</p>
+        <p>
+          Dann schreib mir gerne jederzeit über
+          <a href="https://www.instagram.com/mehmet.ynlmz_/" target="_blank">Instagram</a>
+          oder
+          <a href="https://www.linkedin.com/in/mehmet-hasan-yenilmez/" target="_blank">LinkedIn</a>.
+        </p>
+        <p class="thanks-text">Ich freue mich auf deine Nachricht! 🙌</p>
+      </div>
+    </section>
 
+    <script src="script.js"></script>
+    <script>
+      function closeMobileMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        if (navMenu.classList.contains("active")) {
+          navMenu.classList.remove("active");
+        }
+      }
+    </script>
 
-  <script src="script.js"></script>
-
-<footer class="footer">
-  <p>© 2025 Mehmet | Diese Website ist Teil meines Lernprozesses in Webentwicklung.</p>
-</footer>
- 
-</body>
+    <footer class="footer">
+      <p>© 2025 Mehmet | Diese Website ist Teil meines Lernprozesses in Webentwicklung.</p>
+    </footer>
+  </body>
 </html>
