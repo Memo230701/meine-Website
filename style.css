@@ -44,7 +44,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 100%;
   margin-bottom: 2rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -69,7 +69,7 @@ body {
   background-color: #ffffff;
   color: #333;
   padding: 3rem 1.5rem;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: left;
   line-height: 1.6;
@@ -117,7 +117,7 @@ body {
   padding: 3rem 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 100%;
   text-align: center;
   color: #1e3c72;
 }
@@ -263,7 +263,7 @@ body.dark-mode .nav-menu li a:hover {
 }
 
 /* Mobile Navigation */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .nav-toggle {
     display: block;
     font-size: 2rem;
@@ -307,7 +307,7 @@ body.dark-mode .nav-menu li a:hover {
   padding: 3rem 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 100%;
   text-align: center;
   color: #1e3c72;
 }
@@ -355,7 +355,7 @@ body.dark-mode .nav-menu li a:hover {
 .lern-liste {
   list-style: none;
   padding: 0;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: left;
 }
@@ -444,7 +444,7 @@ blockquote {
   font-size: 1.3rem;
   font-style: italic;
   margin: 1rem auto;
-  max-width: 700px;
+  max-width: 100%;
   line-height: 1.6;
 }
 
@@ -492,7 +492,7 @@ body.dark-mode #zitat-autor {
   background-color: #f0f4ff;
   border-radius: 16px;
   padding: 3rem 2rem;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: left;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
