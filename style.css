@@ -583,7 +583,6 @@ body.dark-mode .lebenslauf-section {
   color: #ffffff;
 }
 
-/* Fade-In Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -593,3 +592,4 @@ body.dark-mode .lebenslauf-section {
   opacity: 1;
   transform: translateY(0);
 }
+
