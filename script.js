@@ -39,6 +39,7 @@ toggle.addEventListener("click", () => {
     enableDarkMode();
   }
 });
+
 const zitate = [
   {
     text: "Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt.",
