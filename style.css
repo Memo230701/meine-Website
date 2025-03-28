@@ -583,19 +583,6 @@ body.dark-mode .lebenslauf-section {
   color: #ffffff;
 }
 
-/* Animierter Darkmode-Wechsel */
-body {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-/* Hover-Zoom auf Buttons */
-.btn {
-  transition: transform 0.3s ease;
-}
-.btn:hover {
-  transform: scale(1.05);
-}
-
 /* Fade-In Animation */
 .fade-in {
   opacity: 0;
