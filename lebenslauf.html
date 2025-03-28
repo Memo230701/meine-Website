@@ -20,6 +20,22 @@
       color: #ffffff;
     }
 
+    .download-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #1e3c72;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-link:hover {
+      background-color: #2a5298;
+    }
+
     @media (max-width: 600px) {
       .lebenslauf-title {
         font-size: 2rem;
@@ -44,7 +60,8 @@
 
       .download-link {
         font-size: 1rem;
-        padding: 0.6rem 1.2rem;
+        padding: 0.8rem 1.5rem;
+        min-height: 44px;
       }
     }
   </style>
@@ -56,11 +73,11 @@
       <a href="index.html" class="nav-logo">Mehmet Hasan Yenilmez</a>
       <div class="nav-right">
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html#about">Über mich</a></li>
-          <li><a href="index.html#lernen">Lernen</a></li>
-          <li><a href="index.html#projekte">Projekte</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
-          <li><a href="lebenslauf.html">Lebenslauf</a></li>
+          <li><a href="index.html#about" onclick="closeMobileMenu()">Über mich</a></li>
+          <li><a href="index.html#lernen" onclick="closeMobileMenu()">Lernen</a></li>
+          <li><a href="index.html#projekte" onclick="closeMobileMenu()">Projekte</a></li>
+          <li><a href="index.html#kontakt" onclick="closeMobileMenu()">Kontakt</a></li>
+          <li><a href="lebenslauf.html" onclick="closeMobileMenu()">Lebenslauf</a></li>
         </ul>
         <button class="dark-toggle" id="dark-toggle" aria-label="Dark Mode Toggle">🌙</button>
         <div class="nav-toggle" id="mobile-menu">&#9776;</div>
@@ -104,10 +121,18 @@
 
     <section class="lebenslauf-section" style="text-align:center;">
       <h2>📄 PDF-Version</h2>
-      <a class="download-link" href="Mehmet_Yenilmez_Lebenslauf.pdf" download="Mehmet_Yenilmez_Lebenslauf.pdf">Lebenslauf als PDF herunterladen</a>
+      <a class="download-link" href="Mehmet_Yenilmez_Lebenslauf.pdf" download="Mehmet_Yenilmez_Lebenslauf.pdf">📥 Lebenslauf als PDF herunterladen</a>
     </section>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    function closeMobileMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+      }
+    }
+  </script>
 </body>
 </html>
