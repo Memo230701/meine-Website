@@ -378,6 +378,20 @@ body.dark-mode .nav-menu li a:hover {
 }
 
 /* Dark Mode aktivieren */
+body.dark-mode .lebenslauf-section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .lebenslauf-section li {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #555;
+  border-radius: 10px;
+}
+
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
