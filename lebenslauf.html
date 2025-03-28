@@ -2,9 +2,24 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lebenslauf – Mehmet Yenilmez</title>
   <link rel="stylesheet" href="style.css">
-  <style src="style.css"></style>
+  <style>
+    .lebenslauf-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    body:not(.dark-mode) .lebenslauf-title {
+      color: #000000;
+    }
+
+    body.dark-mode .lebenslauf-title {
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -27,7 +42,7 @@
 
   <!-- Inhalt -->
   <main class="about">
-    <h1 class="nav-logo" style="text-align:center;">Lebenslauf</h1>
+    <h1 class="lebenslauf-title">Lebenslauf</h1>
 
     <section class="lebenslauf-section">
       <h2>📘 Ausbildung</h2>
@@ -61,7 +76,7 @@
 
     <section class="lebenslauf-section" style="text-align:center;">
       <h2>📄 PDF-Version</h2>
-      <a class="download-link" href="Mehmet_Yenilmez_Lebenslauf.pdf" download>Lebenslauf als PDF herunterladen</a>
+      <a class="download-link" href="Mehmet_Yenilmez_Lebenslauf.pdf" download="Mehmet_Yenilmez_Lebenslauf.pdf">Lebenslauf als PDF herunterladen</a>
     </section>
   </main>
 
